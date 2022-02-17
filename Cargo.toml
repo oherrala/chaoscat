@@ -1,0 +1,17 @@
+[package]
+name = "chaoscat"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+authors = [ "Ossi Herrala <oherrala@iki.fi>" ]
+rust-version = "1.58.1" # This version fixes critical vulnerability (CVE-2022-21658)
+
+categories = [ "development-tools::testing" ]
+keywords = [ "ffi", "testing" ]
+
+[lib]
+crate-type = [ "cdylib" ]
+
+[dependencies]
+getrandom = "0.2"
+libc = "0.2"
